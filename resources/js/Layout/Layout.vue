@@ -13,9 +13,9 @@
             <nav class="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
                 <h1>{{ $page.props.auth.user }}</h1>
                 <div class="space-x-6">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                    <Link href="/contact">Contact</Link>
+                    <Link :href="route('home')">Home</Link>
+                    <Link :href="route('about')">About</Link>
+                    <Link :href="route('contact')">Contact</Link>
                 </div>
             </nav>
         </header>
