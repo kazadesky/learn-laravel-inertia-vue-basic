@@ -4,7 +4,7 @@ import '../css/app.css';
 import { createApp, h } from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
-import Layout from './Layout/Layout.vue';
+import Layout from './Layout/DefaultLayout.vue';
 
 createInertiaApp({
     // default global title for all pages
@@ -38,6 +38,6 @@ createInertiaApp({
         includeCSS: true,
 
         // Whether the NProgress spinner will be shown...
-        showSpinner: true,
+        showSpinner: false,
     },
 });
