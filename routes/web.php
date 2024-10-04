@@ -8,13 +8,13 @@ Route::get('/', function () {
     // this for progress indicator delay load
     sleep(1);
     return Inertia::render('Home');
-});
+})->name('home');
 
 
 // standart render route with inertia
 Route::get('/about', function () {
     return inertia('About');
-});
+})->name('about');
 
 // sorthand render route with inertia
-Route::inertia('/contact', 'Contact', ['contact' => '082267717522']);
+Route::inertia('/contact', 'Contact', ['contact' => '082267717522'])->name('contact');

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/js/app.js')
     @inertiaHead
+    <!-- use method routes for ziggy named -->
+    @routes
 </head>
 
 <body>

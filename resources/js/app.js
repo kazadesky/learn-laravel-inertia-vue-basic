@@ -3,6 +3,7 @@ import '../css/app.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import Layout from './Layout/Layout.vue';
 
 createInertiaApp({
@@ -18,6 +19,8 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
+            // use plugin ziggy for create named route
+            .use(ZiggyVue)
             // include global component for all pages
             .component('Head', Head)
             .component('Link', Link)
