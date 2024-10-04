@@ -22,5 +22,19 @@ createInertiaApp({
             .component('Head', Head)
             .component('Link', Link)
             .mount(el);
-    }
+    },
+    // this is default value for progress indicators
+    progress: {
+        // The delay after which the progress bar will appear, in milliseconds...
+        // delay: 250,
+
+        // The color of the progress bar...
+        color: 'white',
+
+        // Whether to include the default NProgress styles...
+        includeCSS: true,
+
+        // Whether the NProgress spinner will be shown...
+        showSpinner: true,
+    },
 });

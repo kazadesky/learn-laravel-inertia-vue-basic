@@ -5,6 +5,8 @@ use Inertia\Inertia;
 
 // formal render route with inertia
 Route::get('/', function () {
+    // this for progress indicator delay load
+    sleep(2);
     return Inertia::render('Home');
 });
 
