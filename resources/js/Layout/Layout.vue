@@ -1,11 +1,20 @@
+<script setup>
+</script>
+
 <template>
+
+    <Head>
+        <!-- default title for use this template but not create a title in personal page -->
+        <title>My Apps</title>
+        <meta head-key="description" name="description" content="This is the default meta description.">
+    </Head>
     <div>
         <header class="bg-indigo-500 text-white">
             <nav class="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
                 <div class="space-x-6">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/contact">Contact</a>
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contact</Link>
                 </div>
             </nav>
         </header>
