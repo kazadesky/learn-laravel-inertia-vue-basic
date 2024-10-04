@@ -6,14 +6,14 @@ use Inertia\Inertia;
 // formal render route with inertia
 Route::get('/', function () {
     // this for progress indicator delay load
-    sleep(2);
+    sleep(1);
     return Inertia::render('Home');
 });
 
 
 // standart render route with inertia
 Route::get('/about', function () {
-    return inertia('About', ['user' => 'Desky']);
+    return inertia('About');
 });
 
 // sorthand render route with inertia

@@ -5,7 +5,8 @@ defineProps({
 </script>
 
 <template>
+    <Head :title="$page.component"/>
     <div>
-        <h1>Number contact: {{ contact }}</h1>
+        <h1>Number contact: {{ $page.props.contact }}</h1>
     </div>
 </template>

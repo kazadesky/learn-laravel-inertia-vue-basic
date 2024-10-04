@@ -1,10 +1,11 @@
 <script setup>
 // personal use component in this page only
 // import { Head } from '@inertiajs/vue3';
-import Demo from '../Layout/Demo.vue';
+
+// import Demo from '../Layout/Demo.vue';
 
 // default layout in this page
-defineOptions({ layout: Demo });
+// defineOptions({ layout: Demo });
 </script>
 
 <template>
