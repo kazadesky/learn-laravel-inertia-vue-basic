@@ -17,4 +17,5 @@
         <meta head-key="description" name="description" content="This is the home page meta.">
     </Head>
     <h1>Home Page</h1>
+    <Link class="mt-[650px] block" :href="route('home')" preserve-scroll>Refresh</Link>
 </template>
