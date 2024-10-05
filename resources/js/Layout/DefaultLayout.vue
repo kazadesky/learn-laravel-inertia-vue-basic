@@ -10,6 +10,9 @@
                     <li class="text-xl font-mono font-medium">
                         <Link :href="route('register.page')" preserve-scroll>Register</Link>
                     </li>
+                    <li class="text-xl font-mono font-medium">
+                        <Link :href="route('login.page')" preserve-scroll>Login</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
