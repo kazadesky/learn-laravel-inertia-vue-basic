@@ -39,9 +39,9 @@ class HandleInertiaRequests extends Middleware
             // 'auth.user' => 'Desky' ?? null,
 
             // Lazily...
-            // 'auth.user' => fn () => $request->user()
-            //     ? $request->user()->only('id', 'name', 'email')
-            //     : null,
+            'auth.user' => fn () => $request->user()
+                ? $request->user()->only('id', 'name', 'email')
+                : null,
         ]);
     }
 }

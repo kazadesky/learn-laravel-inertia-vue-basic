@@ -22,5 +22,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::inertia('/', 'HomePage')->name('home.page');
+
 Route::inertia('/register', 'Auth/RegisterPage')->name('register.page');
 Route::post('/register', [AuthController::class, 'register'])->name('register.process');
+
+Route::inertia('/login', 'Auth/LoginPage')->name('login.page');
+Route::post('/login', [AuthController::class, 'login'])->name('login.process');
